@@ -3,7 +3,7 @@
 This repository is for this [Kaggle competition](https://www.kaggle.com/c/morebikes2021/overview) for __'Roussel'__ and __'Subin'__. The goal is predict the number of bicycles at rental stations 3 hours in advance. We have written three notebooks that deal with seperate aspects of the asignment.
 
 ### [MotorBikes - Analysis & Per-Station Training](https://www.kaggle.com/desmondrn/motorbikes-analysis-per-station-training)
-The goal of this notebook is to analyse the dataset and identify the best features and best per-station machine learning algorithms to use in the next phases of the competition. Here is the Kaggle link.
+The goal of this notebook is to analyse the dataset and identify the best features and the best per-station machine learning algorithms to use in the next phases of the competition. Moreover, it justifies the splitting of the the trainin data to account for data drifting.
 
 ### [MotorBikes - All-Stations Training & Comparison](https://www.kaggle.com/desmondrn/motorbikes-all-stations-training-comparison)
 This next notebook deals with Phase 1 of the Kaggle competition. First, we build 75 different models for each station (a), then we build one model for all stations at once (b). After that, we compare these two approaches and discuss some variables that affect the learning process in both cases.
