@@ -1,6 +1,6 @@
 # Motorbikes 2021
 
-This repository is for this [Kaggle competition](https://www.kaggle.com/c/morebikes2021/overview) for __'Roussel'__ and __'Subin'__. The goal is predict the number of bicycles at rental stations 3 hours in advance. We have written three notebooks that deal with seperate aspects of the asignment.
+This repository is for this [Kaggle competition](https://www.kaggle.com/c/morebikes2021/overview) for __'Roussel'__ and __'Subin'__. The goal is to predict the number of bicycles at rental stations 3 hours in advance. We have written three notebooks that deal with seperate aspects of the asignment.
 
 ### [MotorBikes - Analysis & Per-Station Training](https://www.kaggle.com/desmondrn/motorbikes-analysis-per-station-training)
 The goal of this notebook is to analyse the dataset and identify the best features and the best per-station machine learning algorithms to use in the next phases of the competition. Moreover, it justifies the splitting of the training data to account for data drifting.
