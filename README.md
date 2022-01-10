@@ -16,7 +16,7 @@ Finally, at Phase 3, we challenge to achieve better performance by our own model
 
 ## Experiments overview
 
-We approach this problem by designing a simple model and interpreting its preliminary outputs. Firstly, we examine the correlation between 22 predictor variables and our target variable and omitted 5 time and weather features to focus on other variables with a higher correlation value. After comparing the performance of 8 learning algorithms such as kNN, random forest and different regression models, we observe that the linear regression model achieved the lowest MAE score, while Poisson regression model having the highest score, when predicting the number of bikes at station 255. Hence, we choose a linear regression model as our main model. Linear regression models are easy to use, compute and interpret with a great performance. 
+We approach this problem by designing a simple model and interpreting its preliminary outputs. Firstly, we examine the correlation between 22 predictor variables and our target variable and omitted 5 time and weather features to focus on other variables with a higher correlation value. After comparing the performance of 8 learning algorithms such as kNN, Random Forest and different regression models, we observe that the linear regression model achieved the lowest MAE score, while Poisson regression model having the highest score, when predicting the number of bikes at station 255. Hence, we choose a linear regression model as our main model. Linear regression models are easy to use, compute and interpret with a great performance. 
 
 Next, we compare MAE scores of given 6 models with different features: short, short_temp, full, full_temp, short_full, and short_full_temp, and find out that the difference is insignificant. MAE scores are 2.57 for all all-stations models and ranges from 2.45 to 2.47 for per-station models. Thus, we conclude that per-station models perform bettern than all-stations models and we use short_full_temp features for following experiments.
 
@@ -36,7 +36,11 @@ This last notebook addresses Phases 2 and 3 of the Kaggle competition. This work
 
 ## Results
 
-Our results show that training multiple models for each station generally achieves better performance than training a single model for all stations. This is especially obvious when the training data is representative of the whole dataset with shuffling. When not shuffling the data, we observe exceptions with some high-variance models such as Decision Trees and Random Forest that perform better when trained on all stations together. Considering the high computational cost of these models, we use per-station models trained wihout shuffling data. Furthermore, we observe that MAE score improves when combining predictions from the 200 provided models and our custom-built ones. Once we find the optimal weights for combining our model with the given models, we make new predictions for the competition. With 50% of the test data, our model achieves 2.47 MAE score at the [leaderboard](https://www.kaggle.com/c/morebikes2021/leaderboard).
+Our results show that training multiple models for each station generally achieves better performance than training a single model for all stations. This is especially obvious when the training data is representative of the whole dataset with shuffling. When not shuffling the data, we observe exceptions with some high-variance models such as Decision Trees and Random Forest that perform better when trained on all stations together. Considering the high computational cost of these models, we use per-station models trained wihout shuffling data. 
+
+Furthermore, we observe that MAE score improves when combining predictions from the 200 provided models and our custom-built ones. Once we find the optimal weights for combining our model with the given models, we make new predictions for the competition. 
+
+With 50% of the test data, our model achieves 2.47 MAE score at the [leaderboard](https://www.kaggle.com/c/morebikes2021/leaderboard).
 
 ## Conclusion
 
