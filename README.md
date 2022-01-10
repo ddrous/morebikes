@@ -40,3 +40,6 @@ Our results show that training multiple models for each station generally achiev
 
 ## Conclusion
 
+This assignment is a good practice to apply the knowledge of machine learning paradigms. Our experiments reflect our own approaches to the assignment from understanding the dataset and the difference among machine learning algoritms, investigating the predictions of pre-trained models, making predictions with the optimal wights for model ensemble and drawing conclusions based on our own models. All our codes are available as Kaggle notebooks (see links above at the Experiments section) and completely reproducible. 
+
+We observe that linear regression models perform as good as other computationally costly machine learning models. We also notice that models trained for each station make better predictions than a single model trained with all stations. Lastly, we learned that there is a significant effect of data shuffling and drifting to the model prediction.
