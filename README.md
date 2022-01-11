@@ -1,5 +1,5 @@
 # MoreBikes 2021
-## Rental bikes predictions using machine learning algorithms
+#### Rental bikes predictions using machine learning algorithms
 
 ## Introduction
 
