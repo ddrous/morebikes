@@ -13,7 +13,7 @@ At Phase 2, we are given a set of linear models trained on other stations (Stati
 
 Finally, at Phase 3, we blend Phases 1 and 2 to achieve better performance.
 
-Our code is available on this [GitHub](https://github.com/desmond-rn/morebikes) and as Kaggle notebooks (see links below in the Experiments section) and completely reproducible.
+Our code is available on this [GitHub repository](https://github.com/desmond-rn/morebikes) and as Kaggle notebooks (see links below in the Experiments section) and completely reproducible.
 
 
 ## Experiments overview
