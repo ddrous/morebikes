@@ -16,9 +16,9 @@ Finally, at Phase 3, we blend together Phases 1 and 2 to achieve better performa
 
 ## Experiments overview
 
-We approach this problem by designing a simple model and interpreting its preliminary outputs. Firstly, we examine the correlation between 22 predictor variables and our target variable, after which we omit 5 time and weather features to focus on other variables with a higher correlation value. 
+We approach this problem by designing a simple model and interpreting its preliminary outputs. Firstly, we examine the correlation between 22 predictor variables and our target variable, after which we omit 5 time and weather features to focus on other variables with a higher correlation value. To deal with data drifting, we use data for the 25 first days of the month for training, and the remaining 6 days for validation.
 
-After comparing the performance of 10 learning algorithms, we observe that when excluding random forests and deep neural networks, linear regression models (with Ridge regularization) often achieved the lowest MAE score, with Poisson regression models often having the highest score. Hence, we choose a linear regression model as our main model. Linear regression models are easy to use, compute and interpret with a good performance. 
+After comparing the performance of 10 learning algorithms, we observe that when excluding random forests and [deep neural networks](https://www.kaggle.com/desmondrn/morebikes-deep-neural-network), linear regression models (with Ridge regularization) often achieved the lowest MAE score, with Poisson regression models often having the highest score. Hence, we choose a linear regression model as our main model. Linear regression models are easy to use, compute and interpret with a good performance. 
 
 Next, we compare MAE scores of given models with 6 different set of features: `short`, `short_temp`, `full`, `full_temp`, `short_full`, and `short_full_temp`, and find out that the difference is insignificant. MAE scores are 2.57 for all all-stations models and ranges from 2.45 to 2.47 for per-station models. Thus, we use `short_full_temp` features for following experiments.
 
